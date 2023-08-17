@@ -275,14 +275,14 @@ class DebtScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 10,),
                               Text(
-                                "Harap dibaca untuk mengetahui profil resiko"
+                                "Harap dibaca untuk mengetahui risiko pinjaman dan keterlambatan"
                               ),
                             ],
                           ),
                         ),
                         Expanded(
                           child: SizedBox(
-                            child: Icon(Icons.arrow_circle_down),
+                            child: Icon(Icons.keyboard_arrow_down),
                           ),
                         ),
                       ],
@@ -291,6 +291,60 @@ class DebtScreen extends StatelessWidget {
                 )
               ],
             ),
+            const SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    height: 145,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFD5FFD0),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.4), // Warna bayangan
+                          spreadRadius: 2, // Radius sebaran bayangan
+                          blurRadius: 7, // Radius blur bayangan
+                          offset: Offset(0, 3), // Posisi offset bayangan (x, y)
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 4,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Anda tidak dapat mengajukan permohonan pinjam",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17,
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Text(
+                                  "Anda dapat mengajukan permohonan kembali ketika sudah menyelesaikan pembayaran sebelumnya."
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Expanded(
+                          child: SizedBox(
+                            child: Icon(Icons.warning_amber),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(height: 100,),
           ],
         ),
       ),

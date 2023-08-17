@@ -29,6 +29,7 @@ Gunakan secara rutin setiap kali selesai mencuci muka. Ratakan ke seluruh wajah 
 
 
 """),
+        const SizedBox(height: 70,),
       ],
     );
   }

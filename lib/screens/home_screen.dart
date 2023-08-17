@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trade_app/widgets/home_widgets/home_auction_bar_widget.dart';
 import 'package:trade_app/widgets/home_widgets/home_debt_bar_widget.dart';
+import 'package:trade_app/widgets/home_widgets/home_group_buttons_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,11 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             SizedBox(
-              height: 70,
+              height: 20,
+            ),
+            HomeGroupButtonsWidget(),
+            SizedBox(
+              height: 20,
             ),
             HomeDebtBarWidget(),
             SizedBox(
