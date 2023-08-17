@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trade_app/screens/auction_screen.dart';
+import 'package:trade_app/screens/debt_screen.dart';
 import 'package:trade_app/screens/home_screen.dart';
 import 'package:trade_app/widgets/home_widgets/home_appbar_widget.dart';
 import 'package:trade_app/widgets/home_widgets/home_bottom_bar_widget.dart';
@@ -18,7 +19,7 @@ class _InitialScreenState extends State<InitialScreen> {
   List mainScreens = [
     HomeScreen(),
     AuctionScreen(),
-    Container(),
+    DebtScreen(),
     Container(),
   ];
 
