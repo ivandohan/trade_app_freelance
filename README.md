@@ -1,16 +1,15 @@
-# trade_app
-
+# Trade App
 Project for finance and auction app.
 
-## Getting Started
+## Untuk Developers
+Sedikit rules SOLID dalam projects :
+- Penamaan variabel clean dan dapat mendeskripsikan variabel tersebut
+- Penamaan class, fungsi, dan file sesuai dengan fungsionalitas dan konteks di mana berada
+- Value konstan yang sering digunakan tambahkan pada folder 'constants'
+- Minimalkan menyingkat penulisan nama
+- Komentar hanya untuk fungsionalitas rumit, atau help flag
+- Pecah widget sebaik dan sebisa mungkin
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Stuck?
+- Mandiri : Baca [dokumentasi flutter](https://docs.flutter.dev/), Stackoverflow, atau chat-gpt.
+- Team Help : Sign komentar hardcode, dan pesan help pada commit message.
