@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trade_app/screens/auction_item_detail_screen.dart';
+import 'package:trade_app/screens/auction_item_set_bid.dart';
 import 'package:trade_app/screens/initial_screen.dart';
 import 'package:trade_app/screens/main_search_screen.dart';
 
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => InitialScreen(),
         MainSearchScreen.routeName: (context) => MainSearchScreen(),
-        AuctionItemDetailScreen.routeName: (context) => AuctionItemDetailScreen(),
+        AuctionItemDetailScreen.routeName: (context) =>
+            AuctionItemDetailScreen(),
+        SetBid.routeName: (context) => SetBid(),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/') {
@@ -44,6 +47,10 @@ class MyApp extends StatelessWidget {
             builder: (context) => AuctionItemDetailScreen(),
             settings: settings,
           );
+        }
+        if (settings.name == SetBid.routeName) {
+          return MaterialPageRoute(
+              builder: (context) => SetBid(), settings: settings);
         }
       },
     );

@@ -33,7 +33,9 @@ class AuctionItemFloatingBidButtonWidget extends StatelessWidget {
             ],
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed('/auction-set-bid');
+            },
             style: ButtonStyle(
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
