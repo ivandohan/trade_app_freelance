@@ -167,6 +167,9 @@ class _AuctionItemDetailScreenState extends State<AuctionItemDetailScreen> {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 100,
+              )
             ]),
           ),
           const AuctionItemFloatingBidButtonWidget(),

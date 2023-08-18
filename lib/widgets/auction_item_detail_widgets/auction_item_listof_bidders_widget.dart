@@ -10,7 +10,7 @@ class AuctionItemListOfBiddersWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Top Bidders",
+          "Top Bidders (4)",
           style: Theme.of(context)
               .textTheme
               .titleMedium!
@@ -24,9 +24,10 @@ class AuctionItemListOfBiddersWidget extends StatelessWidget {
             removeTop: true,
             child: ListView(
               primary: false,
-
               shrinkWrap: true,
               children: const [
+                AuctionItemBidderNameWidget(id: 1),
+                AuctionItemBidderNameWidget(),
                 AuctionItemBidderNameWidget(),
                 AuctionItemBidderNameWidget(),
               ],
