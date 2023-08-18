@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trade_app/widgets/home_widgets/home_app_event_widget.dart';
 import 'package:trade_app/widgets/home_widgets/home_auction_bar_widget.dart';
 import 'package:trade_app/widgets/home_widgets/home_debt_bar_widget.dart';
 import 'package:trade_app/widgets/home_widgets/home_group_buttons_widget.dart';
